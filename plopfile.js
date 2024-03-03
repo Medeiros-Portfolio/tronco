@@ -41,7 +41,7 @@ export default function (plop) {
       {
         type: 'add',
         path: './start.ts',
-        template: 'plop-templates/start/start.hbs',
+        templateFile: 'plop-templates/start/start.hbs',
         skipIfExists: true
       },
       {
