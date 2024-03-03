@@ -2,11 +2,21 @@
   "name": "@rafaelmedrib/tronco",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "plopfile.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "plop"
+  },
+  "bin": {
+    "tronco": "./index.js"
   },
   "keywords": [],
   "author": "Rafael Medeiros <rafaelmedrib@gmail.com> (http://www.rmedeiros.dev/)",
-  "license": "ISC"
+  "license": "ISC",
+  "preferGlobal": true,
+  "dependencies": {
+    "minimist": "^1.2.8",
+    "plop": "^4.0.1"
+  }
 }
