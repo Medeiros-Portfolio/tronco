@@ -1,0 +1,26 @@
+import { container, inject, injectable } from "tsyringe";
+import { I{{class_name}} } from "../../types/{{directory}}";
+import { getContainerConfig } from "../../util/getContainerConfig";
+import './state'
+
+const BUSINESS = '{{class_name}}';
+
+container.register(BUSINESS, {
+  useFactory: (container) => {
+    const config = getContainerConfig(BUSINESS)
+    return container.resolve(config)
+  }
+})
+
+@injectable()
+export class {{class_name}} implements I{{class_name}}.Context {
+  constructor(
+    @inject(BUSINESS)
+    private state: I{{class_name}}.State
+  ) {}
+  
+  execute() {
+    this.state.execute()
+  }
+}
+  

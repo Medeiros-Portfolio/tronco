@@ -141,6 +141,9 @@ This file contains the configuration of the class. It is a simple JSON file that
 Note that, by default, tronco will add any new states to the metadata but will not change the state being used.
 
 
+### start.ts
+This is the code that pre-loads the configured states as environment variables and then proceeds to initialize the application through the entrypoint at `src/index.ts`.
+
 ## Roadmap
 
 ### v1.x
