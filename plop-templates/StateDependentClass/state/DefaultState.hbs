@@ -1,0 +1,12 @@
+import { registry } from "tsyringe";
+import { IExampleBusiness } from "../../../types/{{directory}}";
+
+@registry([{
+    token: '{{class_name}}',
+    useClass: {{class_name}}
+}])
+export class {{class_name}}State implements I{{class_name}}.State {
+  execute() {
+    throw new Error("Method not implemented.");
+  }
+}

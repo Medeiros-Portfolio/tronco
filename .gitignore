@@ -20,10 +20,6 @@
 *.log
 *.tmp
 
-# Ignore compiled JavaScript files
-*.js
-*.js.map
-
 # Ignore TypeScript declaration files
 *.d.ts
 

@@ -16,6 +16,7 @@
   "license": "ISC",
   "preferGlobal": true,
   "dependencies": {
+    "inquirer-directory": "^2.2.0",
     "minimist": "^1.2.8",
     "plop": "^4.0.1"
   }
