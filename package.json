@@ -16,8 +16,11 @@
   "license": "ISC",
   "preferGlobal": true,
   "dependencies": {
+    "chalk": "^5.3.0",
+    "inquirer": "^9.2.15",
     "inquirer-directory": "^2.2.0",
     "minimist": "^1.2.8",
+    "pascal-case": "^4.0.0",
     "plop": "^4.0.1"
   }
 }
